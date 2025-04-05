@@ -152,6 +152,14 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
+SITE_ID = 1
+# Auth settings
+LOGIN_REDIRECT_URL = 'home'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_VERIFICATION = 'optional'
+
 # media url
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR , 'media')
